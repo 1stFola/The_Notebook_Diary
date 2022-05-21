@@ -35,7 +35,6 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Size(max = 15)
     @Column(name = "id", nullable = false)
     private Long id;
 
@@ -46,7 +45,6 @@ public class User {
     @Size(max = 40)
     private String username;
 
-    @Size(min = 6, max = 10)
     private String password;
 
     @OneToMany(mappedBy = "user",
