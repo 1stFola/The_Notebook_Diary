@@ -14,7 +14,7 @@
 	<name>the-notebook</name>
 	<description>Diary App For SpringBoot Class</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
