@@ -14,7 +14,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -74,6 +73,9 @@ public class AuthController {
 
         - Account Creation Request --> DTOs
         - Login Request --> DTOs
+
+        USER SERVICE IMPLEMENTATION EXTENDS 2 PARENTS
+        * - public class UserServiceImpl implements UserService, UserDetailsService {
 
         - API Error  --> EXCEPTION
         - UserInExistenceException --> EXCEPTION

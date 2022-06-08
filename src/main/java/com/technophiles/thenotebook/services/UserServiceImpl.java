@@ -70,7 +70,6 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     public User findById(String userId) {
         return userRepository.findById(Long.valueOf(userId)).orElseThrow(() -> new NoteBookAppException("user does not exist"));
 
-//        return userRepository.findById(Long.valueOf(userId)).get();
     }
 
     @Override
